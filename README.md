@@ -1,41 +1,41 @@
 # Matching-certificates
-CERT = ['P_cULus','C_cULus','B_cULus','P_CE','C_CE','G_CE','P_RCM','C_RCM','B_RCM',
-        'P_UR','C_UR','B_UR','P_WEEE','C_WEEE','B_WEEE',
-        'P_CCC','C_CCC','B_CCC','P_ROHS','C_ROHS','B_ROHS',
-        'P_RoHS','C_RoHS','B_RoHS','P_MAROCCO','C_MAROCCO','B_MAROCCO',
-        'P_EAC','C_EAC','B_EAC','P_CSA','C_CSA','B_CSA',
-        'P_KCC','C_KCC','B_KCC']
+        CERT = ['P_cULus','C_cULus','B_cULus','P_CE','C_CE','G_CE','P_RCM','C_RCM','B_RCM',
+                'P_UR','C_UR','B_UR','P_WEEE','C_WEEE','B_WEEE',
+                'P_CCC','C_CCC','B_CCC','P_ROHS','C_ROHS','B_ROHS',
+                'P_RoHS','C_RoHS','B_RoHS','P_MAROCCO','C_MAROCCO','B_MAROCCO',
+                'P_EAC','C_EAC','B_EAC','P_CSA','C_CSA','B_CSA',
+                'P_KCC','C_KCC','B_KCC']
 
-field_name = ['cULus','CE','RCM','UR','WEEE','CCC',
-             'ROHS','RoHS','MAROCCO','EAC','CSA','KCC']
+        field_name = ['cULus','CE','RCM','UR','WEEE','CCC',
+                     'ROHS','RoHS','MAROCCO','EAC','CSA','KCC']
 
-field_value = ['Culus listed cropped.PCX','Culus listed cropped.PCX','Culus listed cropped.PCX',
-              'CE.PCX','CE.PCX','CE.PCX','RCM-TICK.JPG','RCM-TICK.JPG','RCM-TICK.JPG','UR.PCX','UR.PCX','UR.PCX',
-              'WEEE.BMP','WEEE.BMP','WEEE.BMP','CCC_only.JPG','CCC_only.JPG','CCC_only.JPG',
-              'ROHS25.BMP','ROHS25.BMP','ROHS25.BMP','ROHS_E.BMP','ROHS_E.BMP','ROHS_E.BMP',
-              'ROROC.JPG','ROROC.JPG','ROROC.JPG','EAC.BMP','EAC.BMP','EAC.BMP','CSA.PCX',
-              'CSA.PCX','CSA.PCX','KCC.TIF','KCC.TIF','KCC.TIF']
+        field_value = ['Culus listed cropped.PCX','Culus listed cropped.PCX','Culus listed cropped.PCX',
+                      'CE.PCX','CE.PCX','CE.PCX','RCM-TICK.JPG','RCM-TICK.JPG','RCM-TICK.JPG','UR.PCX','UR.PCX','UR.PCX',
+                      'WEEE.BMP','WEEE.BMP','WEEE.BMP','CCC_only.JPG','CCC_only.JPG','CCC_only.JPG',
+                      'ROHS25.BMP','ROHS25.BMP','ROHS25.BMP','ROHS_E.BMP','ROHS_E.BMP','ROHS_E.BMP',
+                      'ROROC.JPG','ROROC.JPG','ROROC.JPG','EAC.BMP','EAC.BMP','EAC.BMP','CSA.PCX',
+                      'CSA.PCX','CSA.PCX','KCC.TIF','KCC.TIF','KCC.TIF']
 
-def whatelse():
-    print('Do you want to add more values ? y/n')
+        def whatelse():
+            print('Do you want to add more values ? y/n')
 
-end_date = '12/31/9999'
+        end_date = '12/31/9999'
 
-print('---------------------------------------------------------')
+        print('---------------------------------------------------------')
 ## wprowadzanie numerow katalogowych
-PN = []
-while True:
-    Material = input('Insert the catalog number (only one or a list):')
-    if Material == '':
-        q = input('Do you want to add any more catalog numbers? y/n')
-        if q.lower() == 'y':
-            continue
-        else:
-            break
-    PN.append(Material)
-print('Download: {0}'.format(PN))
+        PN = []
+        while True:
+            Material = input('Insert the catalog number (only one or a list):')
+            if Material == '':
+                q = input('Do you want to add any more catalog numbers? y/n')
+                if q.lower() == 'y':
+                    continue
+                else:
+                    break
+            PN.append(Material)
+        print('Download: {0}'.format(PN))
 
-print('---------------------------------------------------------')
+        print('---------------------------------------------------------')
 ## wprowadzanie certyfikatow na odpowiednia etykiete
 certs = [("culus", 0), ("ce", 1), ("rcm", 2), ("ur", 3), ("weee", 4), ("ccc", 5), ("rohs25", 6), ("rohse", 7),
          ("roroc", 8), ("eac", 9), ("csa", 10), ("kcc", 11)]
