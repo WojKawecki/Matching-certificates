@@ -16,15 +16,13 @@ field_value = ['Culus listed cropped.PCX','Culus listed cropped.PCX','Culus list
               'ROROC.JPG','ROROC.JPG','ROROC.JPG','EAC.BMP','EAC.BMP','EAC.BMP','CSA.PCX',
               'CSA.PCX','CSA.PCX','KCC.TIF','KCC.TIF','KCC.TIF']
 
-# import pandas as pd
-
 def whatelse():
     print('Do you want to add more values ? y/n')
 
 end_date = '12/31/9999'
 
 print('---------------------------------------------------------')
-# wprowadzanie numerow katalogowych
+## wprowadzanie numerow katalogowych
 PN = []
 while True:
     Material = input('Insert the catalog number (only one or a list):')
