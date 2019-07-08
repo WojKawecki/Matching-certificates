@@ -1,4 +1,4 @@
-# Matching-certificates
+        # Matching-certificates
         CERT = ['P_cULus','C_cULus','B_cULus','P_CE','C_CE','G_CE','P_RCM','C_RCM','B_RCM',
                 'P_UR','C_UR','B_UR','P_WEEE','C_WEEE','B_WEEE',
                 'P_CCC','C_CCC','B_CCC','P_ROHS','C_ROHS','B_ROHS',
@@ -22,7 +22,7 @@
         end_date = '12/31/9999'
 
         print('---------------------------------------------------------')
-## wprowadzanie numerow katalogowych
+        # wprowadzanie numerow katalogowych
         PN = []
         while True:
             Material = input('Insert the catalog number (only one or a list):')
@@ -36,7 +36,7 @@
         print('Download: {0}'.format(PN))
 
         print('---------------------------------------------------------')
-## wprowadzanie certyfikatow na odpowiednia etykiete
+        # wprowadzanie certyfikatow na odpowiednia etykiete
         certs = [("culus", 0), ("ce", 1), ("rcm", 2), ("ur", 3), ("weee", 4), ("ccc", 5), ("rohs25", 6), ("rohse", 7),
                  ("roroc", 8), ("eac", 9), ("csa", 10), ("kcc", 11)]
 
@@ -90,7 +90,7 @@
         print('Values: {0}'.format(values))
 
         print('---------------------------------------------------------')
-## wprowadzanie daty
+        # wprowadzanie daty
 
         from datetime import date
         date.today()
@@ -115,11 +115,11 @@
                 continue
 
         print('---------------------------------------------------------')
-## data koncowa - na stale
+        # data koncowa - na stale
         print('End date:' + str(end_date))
 
         print('---------------------------------------------------------')
-## wprowadzanie nazwy wartosci pola
+        # wprowadzanie nazwy wartosci pola
         print('You have ' + str(len(PN)) + ' catalog number/s and ' + str(len(values)) + ' certification/s !')
         print(PN)
         print(values)
@@ -136,12 +136,12 @@
         print('Download: {0}'.format(y))
 
         print('---------------------------------------------------------')
-## wprowadzanie nazwy pliku
+        # wprowadzanie nazwy pliku
 
         name = input('Insert file name: ')
 
         print('---------------------------------------------------------')
-## zapisywanie wartosci do pliku Excel
+        # zapisywanie wartosci do pliku Excel
 
         import openpyxl
         wb = openpyxl.load_workbook(name + ".xlsx")
